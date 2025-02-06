@@ -1,0 +1,49 @@
+<div class="flex justify-between items-center font-poppins p-[20px]">
+  <div class="flex flex-col">
+    <h1 class="text-[24px] font-medium">Hello Kruluz Utsman</h1>
+    <p class="text-[14px] font-normal text-[#707EAE]">4:45 pm 19 Jan 2022</p>
+  </div>
+  <div class="flex items-center gap-x-[27px]">
+    <div class="h-12 w-full drop-shadow-lg">
+      <!-- Input container -->
+      <div class="w-full h-full bg-white border border-gray-300 rounded-lg">
+        <!-- Search icon -->
+        <div class="absolute left-3 top-3.5">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="text-gray-500">
+            <path
+              d="M14.5 14.5L10.5 10.5M12 6.5C12 9.53757 9.53757 12 6.5 12C3.46243 12 1 9.53757 1 6.5C1 3.46243 3.46243 1 6.5 1C9.53757 1 12 3.46243 12 6.5Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+
+        <!-- Input field -->
+        <input type="text" placeholder="Type here..."
+          class="w-full h-full pl-10 pr-4 text-sm font-normal text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent font-poppins tracking-tight placeholder-gray-500/50" />
+      </div>
+    </div>
+    <div class="relative">
+      <button (click)="toggleMenu()">
+        <img src="images/placeholder.svg" alt="avatar" />
+      </button>
+      <div class="absolute top-[70px] right-[10px] w-[274px] bg-white p-4 rounded-[14px]"
+        [ngClass]="{ 'block': showMenu, 'hidden': !showMenu}">
+        <div class="flex items-center gap-x-[11px] mb-2">
+          <img src="images/placeholder.svg" alt="avatar" />
+          <div class="flex flex-col">
+            <span class="text-[16px] font-medium">Hello Kruluz Utsman</span>
+            <span class="text-[12px] font-normal mt-[2px] text-[#00261C]">Admin</span>
+          </div>
+        </div>
+        <hr class="absolute left-0 right-0 bg-[#252F40]" />
+        <div class="flex items-center gap-x-[24px] mt-3 p-2 text-[20px] font-normal text-[#252F40] cursor-pointer">
+          <img src="images/user.svg" alt="user">
+          View Profile
+        </div>
+        <div [routerLink]="'/auth'" class="flex items-center gap-x-[24px] p-2 text-[20px] font-normal text-[#252F40] cursor-pointer">
+          <img src="images/logout.svg" alt="logout">
+          Logout</div>
+      </div>
+    </div>
+  </div>
+</div>
