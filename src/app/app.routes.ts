@@ -34,6 +34,10 @@ export const appRoutes: Route[] = [
         path: 'home',
         loadComponent: () => import('./pages/dashboard/home/home.component').then((c) => c.HomeComponent),
       },
+      {
+        path: 'alert-configuration',
+        loadComponent: () => import('./pages/dashboard/alert-configuration/alert-configuration.component').then((c) => c.AlertConfigurationComponent),
+      },
     ]
   }
 ];

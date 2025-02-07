@@ -1,8 +1,8 @@
 <div class="flex gap-x-4 items-center bg-white px-2 rounded-lg font-poppins shadow-input">
-  <div class="text-[16px] w-[50px]">{{ label() }}</div>
-  <div class="w-full lg:w-[120px] flex items-center gap-x-[11px]">
+  <div class="text-[16px] w-[40px]">{{ label() }}</div>
+  <div class="w-full flex justify-end items-center gap-x-[11px]">
     <input type="text" placeholder="dd/mm/yy" readonly
-      class="outline-none transition-all text-right placeholder-black text-[12px] w-full lg:w-[70px]" [matDatepicker]="picker">
+      class="outline-none transition-all text-right placeholder-black text-[12px] w-full lg:w-[80px]" [matDatepicker]="picker">
     <mat-datepicker #picker></mat-datepicker>
     <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
   </div>
