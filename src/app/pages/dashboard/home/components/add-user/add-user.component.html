@@ -1,0 +1,43 @@
+<div class="p-[28px]">
+  <div class="flex justify-between items-center">
+    <h3 class="font-medium text-[24px]" mat-dialog-title>Add User</h3>
+    <img src="images/cross.svg" width="40" alt="cross" class="cursor-pointer" />
+  </div>
+</div>
+<mat-dialog-content>
+  <form class="mt-[21px]">
+    <div class="mb-[9px]">
+      <input placeholder="Email" type="email"
+        class="w-full p-4 h-[60px] bg-[#F8F8F8] rounded-md border border-[#979797] outline-none" />
+    </div>
+    <div class="mb-[9px]">
+      <input placeholder="First Name" type="text"
+        class="w-full p-4 h-[60px] bg-[#F8F8F8] rounded-md border border-[#979797] outline-none" />
+    </div>
+    <div class="mb-[9px]">
+      <input placeholder="Last Name" type="text"
+        class="w-full p-4 h-[60px] bg-[#F8F8F8] rounded-md border border-[#979797] outline-none" />
+    </div>
+    <div class="relative mb-[9px]" (click)="customMatSelect.open()" role="presentation">
+      <input readonly value="Admin" type="text"
+        class="w-full p-4 h-[60px] bg-[#F8F8F8] rounded-md border border-[#979797] outline-none" />
+      <div class="absolute left-0 top-1 opacity-0 pointer-events-none w-[452px]">
+        <mat-form-field class="w-full">
+          <mat-select #customMatSelect>
+            <mat-option value="admin">Admin</mat-option>
+            <mat-option value="user">User</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="absolute right-4 top-6 cursor-pointer"><img src="images/select-down-arrow.svg"
+          alt="select-down-arrow"></div>
+    </div>
+    <div class="mb-[9px]">
+      <input placeholder="Password" type="password"
+        class="w-full p-4 h-[60px] bg-[#F8F8F8] rounded-md border border-[#979797] outline-none" />
+    </div>
+    <div class="flex justify-end">
+      <app-button text="Confirm" />
+    </div>
+  </form>
+</mat-dialog-content>

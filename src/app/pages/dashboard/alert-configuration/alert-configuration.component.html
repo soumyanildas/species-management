@@ -1,1 +1,93 @@
-<p>alert-configuration works!</p>
+<div class="pb-8 font-poppins">
+  <div class="flex justify-end mb-[5px]">
+    <app-button icon="images/plus.svg" text="Add User" (click)="openModal()" />
+  </div>
+  <h1 class="font-medium text-[32px] mb-[10px]">All Users</h1>
+  <div class="w-full overflow-x-auto">
+    <table class="min-w-full bg-white rounded-lg shadow-sm">
+      <thead>
+        <tr class="border-b border-b-black">
+          <th class="px-6 py-4 text-center text-lg font-normal text-black whitespace-nowrap">User</th>
+          <th class="px-6 py-4 text-center text-lg font-normal text-black whitespace-nowrap">Camera</th>
+          <th class="px-6 py-4 text-center text-lg font-normal text-black whitespace-nowrap">Species</th>
+          <th class="px-6 py-4 text-center text-lg font-normal text-black whitespace-nowrap">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-gray-50">
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex items-center gap-3">
+              1.
+              <div class="h-10 w-10 rounded-full bg-gray-200"></div>
+              <span class="font-medium">Jakson Jhone</span>
+            </div>
+          </td>
+          <td class="px-6 py-4 text-gray-600 whitespace-nowrap">#Dsler HD 893</td>
+          <td class="px-6 py-4 text-center whitespace-nowrap">Mero Tower</td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex justify-center items-center gap-x-3">
+              <mat-form-field>
+                <mat-select value="1">
+                  <mat-option value="1">Option 1</mat-option>
+                  <mat-option value="2">Option 2</mat-option>
+                  <mat-option value="3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <button><img src="images/edit.svg" alt="edit" /></button>
+              <button><img src="images/delete.svg" alt="delete" /></button>
+            </div>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex items-center gap-3">
+              2.
+              <div class="h-10 w-10 rounded-full bg-gray-200"></div>
+              <span class="font-medium">Kherui Khone</span>
+            </div>
+          </td>
+          <td class="px-6 py-4 text-gray-600 whitespace-nowrap">#Dsler HD 893</td>
+          <td class="px-6 py-4 text-center whitespace-nowrap">Shouer Hoes</td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex justify-center items-center gap-x-3">
+              <mat-form-field>
+                <mat-select value="1">
+                  <mat-option value="1">Option 1</mat-option>
+                  <mat-option value="2">Option 2</mat-option>
+                  <mat-option value="3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <button><img src="images/edit.svg" alt="edit" /></button>
+              <button><img src="images/delete.svg" alt="delete" /></button>
+            </div>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex items-center gap-3">
+              3.
+              <div class="h-10 w-10 rounded-full bg-gray-200"></div>
+              <span class="font-medium">Kson Gonile</span>
+            </div>
+          </td>
+          <td class="px-6 py-4 text-gray-600 whitespace-nowrap">#Dsler HD 893</td>
+          <td class="px-6 py-4 text-center whitespace-nowrap">Pereson Khers</td>
+          <td class="px-6 py-4 whitespace-nowrap">
+            <div class="flex justify-center items-center gap-x-3">
+              <mat-form-field>
+                <mat-select value="1">
+                  <mat-option value="1">Option 1</mat-option>
+                  <mat-option value="2">Option 2</mat-option>
+                  <mat-option value="3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <button><img src="images/edit.svg" alt="edit" /></button>
+              <button><img src="images/delete.svg" alt="delete" /></button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
