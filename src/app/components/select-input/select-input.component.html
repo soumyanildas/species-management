@@ -1,7 +1,7 @@
-<div class="flex gap-x-4 justify-between items-center bg-white p-2 rounded-lg w-full font-poppins shadow-input" (click)="customMatSelect.open()" role="presentation">
+<div class="relative flex gap-x-4 justify-between items-center bg-white p-2 rounded-lg w-full font-poppins shadow-input" (click)="customMatSelect.open()" role="presentation">
   <input [placeholder]="label()" class="outline-none text-[16px] w-[100px]" readonly/>
-  <div class="relative flex items-center gap-x-[11px]">
-    <div class="absolute right-0 opacity-0 pointer-events-none">
+  <div class="flex items-center gap-x-[11px]">
+    <div class="absolute left-0 opacity-0 pointer-events-none w-[80px]">
       <mat-form-field>
         <mat-select #customMatSelect>
           <mat-option value="1">Option 1</mat-option>
