@@ -1,9 +1,11 @@
 import { Route } from '@angular/router';
+import { authGuard } from './guards/auth/auth.guard';
 
 export const appRoutes: Route[] = [
   { path: '', redirectTo: '/auth', pathMatch: 'full' },
   {
     path: 'auth',
+    canActivate: [authGuard],
     loadComponent: () => import('./pages/auth/auth.component').then((c) => c.AuthComponent),
     children: [
       {
@@ -18,11 +20,16 @@ export const appRoutes: Route[] = [
       {
         path: 'forgot-password',
         loadComponent: () => import('./pages/auth/forgot-password/forgot-password.component').then((c) => c.ForgotPasswordComponent),
+      },
+      {
+        path: 'reset-password',
+        loadComponent: () => import('./pages/auth/reset-password/reset-password.component').then((c) => c.ResetPasswordComponent),
       }
     ]
   },
   {
     path: 'dashboard',
+    canActivate: [authGuard],
     loadComponent: () => import('./pages/dashboard/dashboard.component').then((c) => c.DashboardComponent),
     children: [
       {
@@ -39,5 +46,10 @@ export const appRoutes: Route[] = [
         loadComponent: () => import('./pages/dashboard/alert-configuration/alert-configuration.component').then((c) => c.AlertConfigurationComponent),
       },
     ]
+  },
+  {
+    path: '**',
+    loadComponent: () => import('./pages/error/error.component').then((c) => c.ErrorComponent)
   }
+
 ];

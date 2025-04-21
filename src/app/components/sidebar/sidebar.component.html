@@ -14,23 +14,23 @@
   </div>
 
   <ul>
-    <li routerLink="/dashboard/home" routerLinkActive="bg-[#252F40] text-white"
+    <li routerLink="/dashboard/home" (click)="isOpen = false" role="presentation" routerLinkActive="bg-[#252F40] text-white"
       class="rounded-[5px] mb-2 cursor-pointer flex items-center gap-x-[17px] p-4 font-poppins font-semibold text-lg">
       <img src="images/dashboard.svg" alt="icon" /> Dashboard
     </li>
-    <li routerLink="/dashboard/alerts" routerLinkActive="bg-[#252F40] text-white"
+    <li routerLink="/dashboard/alerts" (click)="isOpen = false" role="presentation" routerLinkActive="bg-[#252F40] text-white"
       class="rounded-[5px] hover:bg-[#252F40] hover:text-white mb-2 cursor-pointer flex items-center gap-x-[17px] p-4 font-poppins font-semibold text-lg">
       <img src="images/alerts.svg" alt="icon" /> Alerts
     </li>
-    <li routerLink="/dashboard/species-management" routerLinkActive="bg-[#252F40] text-white"
+    <li routerLink="/dashboard/species-management" (click)="isOpen = false" role="presentation" routerLinkActive="bg-[#252F40] text-white"
       class="rounded-[5px] hover:bg-[#252F40] hover:text-white mb-2 cursor-pointer flex items-center gap-x-[17px] p-4 font-poppins font-semibold text-lg">
       <img src="images/species-management.svg" alt="icon" /> Species Management
     </li>
-    <li routerLink="/dashboard/alert-configuration" routerLinkActive="bg-[#252F40] text-white"
+    <li routerLink="/dashboard/alert-configuration" (click)="isOpen = false" role="presentation" routerLinkActive="bg-[#252F40] text-white"
       class="rounded-[5px] hover:bg-[#252F40] hover:text-white mb-2 cursor-pointer flex items-center gap-x-[17px] p-4 font-poppins font-semibold text-lg">
       <img src="images/alert-configuration.svg" alt="icon" /> Alert Configuration
     </li>
-    <li routerLink="/dashboard/new-network" routerLinkActive="bg-[#252F40] text-white"
+    <li routerLink="/dashboard/new-network" (click)="isOpen = false" role="presentation" routerLinkActive="bg-[#252F40] text-white"
       class="rounded-[5px] hover:bg-[#252F40] hover:text-white mb-2 cursor-pointer flex items-center gap-x-[17px] p-4 font-poppins font-semibold text-lg">
       <img src="images/new-network.svg" alt="icon" /> New Network
     </li>

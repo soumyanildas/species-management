@@ -5,28 +5,7 @@
       <p class="text-[14px] font-normal text-[#707EAE]">4:45 pm 19 Jan 2022</p>
     </div>
     <div class="relative block lg:hidden z-10">
-      <button (click)="toggleMenu()">
-        <img src="images/placeholder.svg" alt="avatar" />
-      </button>
-      <div class="absolute top-[70px] right-[10px] w-[274px] bg-white p-4 rounded-[14px] shadow-md"
-        [ngClass]="{ 'block': showMenu, 'hidden': !showMenu}">
-        <div class="flex items-center gap-x-[11px] mb-2">
-          <img src="images/placeholder.svg" alt="avatar" />
-          <div class="flex flex-col">
-            <span class="text-[16px] font-medium">Hello Kruluz Utsman</span>
-            <span class="text-[12px] font-normal mt-[2px] text-[#00261C]">Admin</span>
-          </div>
-        </div>
-        <hr class="absolute left-0 right-0 border border-[#252F40]" />
-        <div class="flex items-center gap-x-[24px] mt-3 p-2 text-[20px] font-normal text-[#252F40] cursor-pointer">
-          <img src="images/user.svg" alt="user">
-          View Profile
-        </div>
-        <div [routerLink]="'/auth'"
-          class="flex items-center gap-x-[24px] p-2 text-[20px] font-normal text-[#252F40] cursor-pointer">
-          <img src="images/logout.svg" alt="logout">
-          Logout</div>
-      </div>
+      <app-header-dropdown />
     </div>
   </div>
   <div class="flex items-center gap-x-[27px]">
@@ -49,28 +28,7 @@
       </div>
     </div>
     <div class="relative hidden lg:block z-10">
-      <button (click)="toggleMenu()">
-        <img src="images/placeholder.svg" alt="avatar" />
-      </button>
-      <div class="absolute top-[70px] right-[10px] w-[274px] bg-white p-4 rounded-[14px] shadow-md"
-        [ngClass]="{ 'block': showMenu, 'hidden': !showMenu}">
-        <div class="flex items-center gap-x-[11px] mb-2">
-          <img src="images/placeholder.svg" alt="avatar" />
-          <div class="flex flex-col">
-            <span class="text-[16px] font-medium">Hello Kruluz Utsman</span>
-            <span class="text-[12px] font-normal mt-[2px] text-[#00261C]">Admin</span>
-          </div>
-        </div>
-        <hr class="absolute left-0 right-0 border border-[#252F40]" />
-        <div class="flex items-center gap-x-[24px] mt-3 p-2 text-[20px] font-normal text-[#252F40] cursor-pointer">
-          <img src="images/user.svg" alt="user">
-          View Profile
-        </div>
-        <div [routerLink]="'/auth'"
-          class="flex items-center gap-x-[24px] p-2 text-[20px] font-normal text-[#252F40] cursor-pointer">
-          <img src="images/logout.svg" alt="logout">
-          Logout</div>
-      </div>
+      <app-header-dropdown />
     </div>
   </div>
 </div>
